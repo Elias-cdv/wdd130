@@ -1,54 +1,13 @@
-/* Definir variables de color */
-:root {
-    --color-1: #420000;   /* Color principal */
-    --color-2: #921000;   /* Color secundario */
-    --color-3: #97220c;   /* Color terciario */
-    --color-4: #000000;   /* Color de fondo o texto oscuro */
+*{
+    box-sizing: border-box;
 }
 
-/* Aplicar fuentes globales */
-body {
-    font-family: 'Roboto', sans-serif;  /* Fuente para párrafos */
-    background-color: var(--color-4);  /* Fondo oscuro */
-    color: var(--color-1);  /* Color de texto principal */
+body{
+    font-family: "Chelsea Market", serif;
+    font-weight: 400;
 }
 
-/* Estilo para los encabezados h1 */
-h1 {
-    font-family: 'Chelsea Markey', sans-serif;  /* Fuente para títulos */
-    color: var(--color-2);  /* Color para los títulos */
-}
-
-/* Estilo para los párrafos */
-p {
-    color: var(--color-3);  /* Color para los párrafos */
-}
-
-/* Eliminar subrayado de enlaces solo en las imágenes de redes sociales */
-footer a img {
-    text-decoration: none;
-}
-
-/* Estilo para la imagen de héroe */
-.hero {
-    position: relative;
-    width: 100%;
-    height: 400px;  /* Altura de la imagen hero */
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero h1, .hero article {
-    position: absolute;
-    color: white;  /* Color blanco para el texto sobre la imagen */
-    z-index: 1;
-    padding: 10px;
-}
-
-.hero article {
-    background-color: rgba(0, 0, 0, 0.6);  /* Fondo negro con opacidad para mejor legibilidad */
+h1,h2 {
+    font-family: "Roboto", serif;
+    font-weight: 100;
 }
