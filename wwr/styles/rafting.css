@@ -1,13 +1,143 @@
-*{
+:root {
+    --black: #000000;
+    --dark-red: #420000;
+    --red: #921000;
+    --light-red: #97220c;
+    --white: #e2b89f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Chelsea Market", serif;
-    font-weight: 400;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    background-color: var(--white);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-h1,h2 {
-    font-family: "Roboto", serif;
-    font-weight: 100;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--red);
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--red);
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--dark-red);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Chelsea Market', cursive;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 2.5rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+.hero article p {
+    margin-top: 0;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-family: 'Chelsea Market', cursive;
+    color: var(--dark-red);
+    margin-bottom: 1rem;
+}
+
+section p {
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+section img {
+    width: 200px;
+    height: auto;
+    margin: 0.5rem;
+    border: 2px solid var(--red);
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: 2px solid var(--red);
+    background-color: var(--light-red);
+    color: var(--white);
+}
+
+footer p {
+    margin-bottom: 1rem;
+}
+
+footer .sociallinks a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer .sociallinks img {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+
+footer .sociallinks a:hover img {
+    filter: brightness(0.8);
 }
