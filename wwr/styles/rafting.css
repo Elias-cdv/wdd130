@@ -23,15 +23,25 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
+    gap: 20px;
     padding: 1rem 0;
     border-bottom: 2px solid var(--red);
 }
 
 header img {
-    height: 50px;
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
 nav a {
@@ -46,6 +56,28 @@ nav a:hover {
     color: var(--dark-red);
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.adventure-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.adventure-grid figure{
+    text-align: center;
+    max-width: 200px;
+}
+
+.adventure-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
 .hero {
     position: relative;
     text-align: center;
@@ -65,7 +97,7 @@ nav a:hover {
     transform: translate(-50%, -50%);
     font-family: 'Chelsea Market', cursive;
     color: var(--white);
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-size: 2.5rem;
@@ -127,6 +159,11 @@ footer p {
     margin-bottom: 1rem;
 }
 
+footer .sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
 footer .sociallinks a {
     text-decoration: none;
     margin: 0 0.5rem;
